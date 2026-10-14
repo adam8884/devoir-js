@@ -15,3 +15,15 @@
  
 		
 	}
+     window.addEventListener("load",addTabFocus);
+     
+     function addTabFocus(){
+          console.log("addTabFocus is working");
+          let images=document.querySelectorAll(".preview");
+          for (let i = 0; i < images.length; i++) {
+               images[i].setAttribute("tabindex", "0");
+               
+          }
+
+     }
+     
